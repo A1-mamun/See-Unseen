@@ -141,46 +141,142 @@ select {
 .popular-tours {
   width: 80%;
   display: flex;
-  gap: 100px;
   justify-content: space-between;
   margin: 100px auto;
 }
 .popular-tours-content {
   width: 50%;
 }
-.popular-tours-title {
+.section-title {
   color: var(--dark);
   font-size: 40px;
   font-weight: 800;
   margin: 0;
 }
-.popular-tours-description {
+.section-description {
   color: var(--light-dark);
   font-family: Mulish;
   font-size: 20px;
   font-weight: 400;
   line-height: 26px; /* 162.5% */
 }
-.popular-tours-description p {
+.section-description p {
   margin: 24px 0;
 }
-.popular-tours-description li:nth-child(2) {
+.section-description li:nth-child(2) {
   margin: 16px 0;
 }
-/* .popular-tours-img {
-  width: 50%;
-} */
 .popular-tours img {
   width: 100%;
   height: 100%;
-  /* margin: 0 auto; */
 }
 
+/* destination section styles */
+.destination {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.destination .section-description {
+  margin: 25px auto 50px;
+}
+.destination p {
+  width: 70%;
+}
+.maldivs {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 5.png");
+  grid-area: maldivs;
+}
+.indonesia {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 8.png");
+  grid-area: indonesia;
+}
+.srilanka {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 6.png");
+  grid-area: srilanka;
+}
+.n-america {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 7.png");
+  grid-area: n-america;
+}
+.kashmir {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 9.png");
+  grid-area: kashmir;
+}
+.bangladesh {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 11.png");
+  grid-area: bangladesh;
+}
+.bandarban {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 10.png");
+  grid-area: bandarban;
+}
+.destination-img {
+  display: grid;
+  gap: 24px;
+  grid-template-areas:
+    "maldivs maldivs maldivs maldivs maldivs maldivs indonesia indonesia indonesia indonesia indonesia indonesia"
+    "srilanka srilanka srilanka srilanka n-america n-america n-america n-america n-america kashmir kashmir kashmir"
+    "bangladesh bangladesh bangladesh bangladesh bangladesh bandarban bandarban bandarban bandarban bandarban bandarban bandarban";
+}
+.destination-img div {
+  color: var(--white);
+  height: 350px;
+  font-size: 30px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+}
 /* Rsponsive Styles */
 
 /* Mobile Device */
 @media screen and (max-width: 600px) {
+  .header-container {
+    width: 90%;
+    margin: 20px auto;
+  }
   .banner {
+    width: 90%;
     height: auto;
   }
   .banner-title {
@@ -213,26 +309,52 @@ select {
   }
 
   .popular-tours {
+    width: 90%;
     flex-direction: column;
+    row-gap: 24px;
     margin: 25px auto;
   }
-  .popular-tours-title {
+  .section-title {
     font-size: 20px;
   }
-  .popular-tours-description {
-    width: 335px;
+  /* .popular-tours-content {
+    width: 100%;
+  } */
+  .section-description {
+    width: 380px;
+    /* width: 100%; */
     font-size: 14px;
     line-height: 24px; /* 162.5% */
   }
-  .popular-tours-description p {
+  .section-description p {
     margin: 16px 0;
   }
-  .popular-tours-description li:nth-child(2) {
+  .section-description li:nth-child(2) {
     margin: 12px 0;
   }
-  .popular-tours img {
-    width: 100%;
-    height: 100%;
-    /* margin: 0 auto; */
+  .destination {
+    width: 90%;
+  }
+  .destination .section-description {
+    margin: 16px auto;
+  }
+  .destination p {
+    width: 80%;
+  }
+  .destination-img div {
+    height: 250px;
+    font-size: 20px;
+  }
+  .destination-img {
+    gap: 16px;
+    /* grid-template-columns: repeat(1, 1fr); */
+    grid-template-areas:
+      "maldivs"
+      "indonesia"
+      "srilanka"
+      "n-america"
+      "kashmir"
+      "bangladesh"
+      "bandarban";
   }
 }
