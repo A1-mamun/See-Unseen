@@ -283,6 +283,7 @@ select {
             rgba(19, 19, 24, 0.2) 100%),
         url("../Images/Rectangle\ 7.png");
     grid-area: n-america;
+
 }
 
 .kashmir {
@@ -310,6 +311,7 @@ select {
 }
 
 .destination-img {
+    text-align: center;
     display: grid;
     gap: 24px;
     grid-template-areas:
@@ -648,6 +650,43 @@ footer .section-description {
     margin-top: 50px;
 }
 
+/* paralax styles */
+.paralax {
+    width: 80%;
+    height: 500px;
+    background-image: url("../Images/Rectangle\ 5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 100px auto;
+    border-radius: 16px;
+    position: relative;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ptext {
+    width: 50%;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    border: 1px solid black;
+    border-radius: 16px;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.ptext h1 {
+    margin: 0;
+    color: var(--dark);
+    font-size: 40px;
+    font-weight: 600;
+    padding: 30px;
+}
+
 /* Rsponsive Styles */
 
 /* Mobile Device */
@@ -891,4 +930,23 @@ footer .section-description {
         padding: 35px 45px;
     }
 
+    /* paralax styles */
+    .paralax {
+        width: 90%;
+        height: 400px;
+        margin: 25px auto;
+    }
+
+    .ptext {
+        width: 70%;
+        letter-spacing: 1px;
+    }
+
+    .ptext h1 {
+        margin: 0;
+        color: var(--dark);
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px;
+    }
 }
