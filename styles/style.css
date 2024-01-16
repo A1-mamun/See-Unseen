@@ -27,13 +27,28 @@ body {
 .btn-tomato {
     background-color: var(--tomato);
     color: var(--white);
-    width: 174px;
-    height: 52px;
+    /* width: 174px;
+    height: 52px; */
     padding: 15px 34px;
     border-radius: 8px;
     border: 0;
     font-size: 16px;
     font-weight: 700;
+}
+
+.section-title {
+    color: var(--dark);
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.section-description {
+    color: var(--light-dark);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
 }
 
 .header-container {
@@ -175,26 +190,12 @@ select {
     width: 50%;
 }
 
-.section-title {
-    color: var(--dark);
-    font-size: 40px;
-    font-weight: 800;
-    margin: 0;
-}
 
-.section-description {
-    color: var(--light-dark);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    /* 162.5% */
-}
-
-.section-description p {
+.popular-tours .section-description p {
     margin: 24px 0;
 }
 
-.section-description li:nth-child(2) {
+.popular-tours .section-description li:nth-child(2) {
     margin: 16px 0;
 }
 
@@ -389,8 +390,9 @@ select {
     display: flex;
     justify-content: end;
     margin-bottom: 24px;
-   
+
 }
+
 .tour-kashmir {
     width: 100%;
     height: 550px;
@@ -409,10 +411,11 @@ select {
     border: 2px solid #FFF;
     background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(2.5px);
-     position: relative;
+    position: relative;
     left: 55px;
     top: 15%;
 }
+
 .discount-card {
     width: 500px;
     height: 390px;
@@ -420,26 +423,31 @@ select {
     border: 2px solid #FFF;
     background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(2.5px);
-     position: relative;
+    position: relative;
     right: 55px;
     top: 15%;
 }
-.discount-card .card-title{
+
+.discount-card .card-title {
     margin-top: 10px;
 }
-.discount-card .btn-tomato{
+
+.discount-card .btn-tomato {
     font-size: 20px;
     font-weight: 800;
 }
+
 .discount-card-content {
     padding: 30px;
-   
+
 }
 
-.discount-details,.date-location {
+.discount-details,
+.date-location {
     display: flex;
     gap: 24px;
 }
+
 /* .date-location{
     margin: 0;
 } */
@@ -449,7 +457,93 @@ select {
     align-items: center;
 }
 
+/* perferct place section styles */
 
+.perfect-place {
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+.perfect-place .section-title {
+    width: 450px;
+}
+
+.perfect-place .section-description {
+    margin: 25px 0;
+}
+
+.perfect-place li {
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    /* 162.5% */
+    margin-bottom: 16px;
+}
+
+.perfect-place .btn-tomato {
+    margin-top: 20px;
+}
+
+.perfect-place-content {
+    width: 70%;
+}
+
+.perfect-place-img {
+    width: 100%;
+    height: 450px;
+    border-radius: 16px;
+    background-image: url("../Images/Group\ 40089.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.perfect-place-img h1 {
+    width: 270px;
+    text-align: center;
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.video-content {
+    width: 90%;
+    padding: 80px 30px 30px;
+}
+
+.play-pause,
+.mute {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.play-pause p {
+    color: rgba(243, 243, 243, 1);
+}
+
+.video-function-bar {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+.video-length {
+    width: 100%;
+    height: 4px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    display: flex;
+    align-items: center;
+}
 
 /* Rsponsive Styles */
 
@@ -592,41 +686,74 @@ select {
     }
 
 
-.discount {
-    width: 90%;
-}
+    .discount {
+        width: 90%;
+    }
 
-.discount>p {
-    width: 60%;
-}
-.text-gray{
-    font-size: 14px;
-}
-.tour-kashmir .discount-card {
-    width: 350px;
-    height: 350px;
-    left:10px;
-    top: 35%;
-}
-.discount-card {
-    width: 350px;
-    height: 350px;
-    right:10px;
-    top: 35%;
-}
-.discount-card .card-title{
-    margin-top: 0;
-}
-.discount-card .btn-tomato{
-    font-size: 16px;
-}
-.discount-card-content {
-    padding: 20px;
-   
-}
+    .discount>p {
+        width: 70%;
+    }
 
-.discount-details {
-flex-direction: column;
-gap: 0;}
+    .text-gray {
+        font-size: 14px;
+    }
 
+    .tour-kashmir .discount-card {
+        width: 350px;
+        height: 350px;
+        left: 10px;
+        top: 35%;
+    }
+
+    .discount-card {
+        width: 350px;
+        height: 350px;
+        right: 10px;
+        top: 35%;
+    }
+
+    .discount-card .card-title {
+        margin-top: 0;
+    }
+
+    .discount-card .btn-tomato {
+        font-size: 16px;
+    }
+
+    .discount-card-content {
+        padding: 20px;
+
+    }
+
+    .discount-details {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* perfect place section styles */
+    .perfect-place {
+        width: 90%;
+        margin: 25px auto;
+        gap: 25px;
+        flex-direction: column;
+    }
+
+    .perfect-place-content {
+        width: 70%;
+    }
+
+    .video-content {
+        padding: 25px 10px 10px;
+    }
+
+    /* .hide {
+        display: none;
+    } */
+
+    .perfect-place .section-title {
+        width: 230px;
+    }
+    .perfect-place-img {
+    height: 300px;
+}
 }
