@@ -623,6 +623,42 @@ select {
     margin-bottom: 4px;
 }
 
+/* footer secstion styles */
+footer {
+    margin-top: 100px;
+    padding: 110px 200px;
+    background: rgba(19, 19, 24, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .section-description {
+    width: 80%;
+    margin: 0 auto 30px;
+}
+
+.social-media a {
+    color: var(--dark);
+    text-decoration: none;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.horizontal-bar {
+    border-bottom: 1px solid rgba(19, 19, 24, 0.1);
+    padding-bottom: 50px;
+}
+
+.copyright {
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 50px;
+}
+
 /* Rsponsive Styles */
 
 /* Mobile Device */
@@ -866,4 +902,10 @@ select {
     .newsletter-discount h2 {
         font-size: 16px;
     }
+    /* footer styles */
+    footer {
+    margin-top: 25px;
+    padding: 35px 45px;
+}
+
 }
