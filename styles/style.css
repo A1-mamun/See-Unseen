@@ -545,6 +545,84 @@ select {
     align-items: center;
 }
 
+/* newsletter section styles */
+.newsletter-content {
+    border-radius: 16px;
+    border: 1px solid var(--tomato);
+    padding: 40px;
+}
+
+.newsletter-content p {
+    border-bottom: 1px solid rgba(19, 19, 24, 0.1);
+    padding-bottom: 24px;
+}
+
+.newsletter-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-content input {
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--light-dark);
+    margin-bottom: 15px;
+    width: calc(100% - 20px);
+    padding: 15px 0 15px 20px;
+}
+
+.newsletter-container {
+    width: 80%;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.newsletter-img {
+    width: 65%;
+    height: 480px;
+    background-image: url("../Images/Rectangle\ 8\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+
+}
+
+.newsletter-discount {
+    width: 300px;
+    height: 70px;
+    background: var(--tomato);
+    padding: 30px 40px;
+    border-radius: 16px;
+    position: relative;
+    top: calc(100% - (130px));
+    left: calc(100% - (360px));
+    transform: rotate(-19.628deg);
+    transform-origin: bottom left;
+}
+
+.newsletter-discount h1 {
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+}
+
+.newsletter-discount h2 {
+    color: var(--white);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
 /* Rsponsive Styles */
 
 /* Mobile Device */
@@ -753,7 +831,39 @@ select {
     .perfect-place .section-title {
         width: 230px;
     }
+
     .perfect-place-img {
-    height: 300px;
-}
+        height: 300px;
+    }
+
+    .newsletter-container {
+        width: 90%;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .newsletter-content {
+        width: 90%;
+        padding: 24px;
+    }
+
+    .newsletter-img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .newsletter-discount {
+        width: 200px;
+        height: 55px;
+        top: calc(100% - (120px));
+        left: calc(100% - (265px));
+    }
+
+    .newsletter-discount h1 {
+        font-size: 25px;
+    }
+
+    .newsletter-discount h2 {
+        font-size: 16px;
+    }
 }
