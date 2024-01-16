@@ -3,10 +3,12 @@
     --dark: #131318;
     --tomato: #ff5400;
     --Dark-02: #424247;
-    --transparent-white: rgba(255, 255, 255, 0.3);
+    --transparent-dark: rgba(255, 255, 255, 0.3);
     --white: #ffffff;
     --light-dark: rgba(19, 19, 24, 0.5);
     --gray: rgba(90, 90, 93, 1);
+    --transparent-white: rgba(19, 19, 24, 0.05);
+    --bar-color: rgba(19, 19, 24, 0.1);
 }
 
 body {
@@ -51,6 +53,22 @@ body {
     /* 162.5% */
 }
 
+.card-title {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.card-description {
+    color: var(--light-dark);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;/
+}
+
+/* shared styles end */
+
+/* header styles */
 .header-container {
     width: 80%;
     margin: 50px auto;
@@ -96,10 +114,11 @@ nav a {
     font-weight: 400;
 }
 
-.bar {
+.nav-bar {
     display: none;
 }
 
+/* banner styles */
 .banner {
     background: linear-gradient(180deg,
             rgba(19, 19, 24, 0.8) 0%,
@@ -145,7 +164,7 @@ nav a {
 }
 
 .form-container {
-    background-color: var(--transparent-white);
+    background-color: var(--transparent-dark);
     padding: 16px;
     margin-top: 0;
     display: flex;
@@ -178,6 +197,7 @@ select {
     margin-right: 8px;
 }
 
+/* popular tours styles */
 .popular-tours {
     width: 80%;
     display: flex;
@@ -331,19 +351,6 @@ select {
     background: rgba(233, 68, 68, 0.05);
 }
 
-.card-title {
-    color: var(--dark);
-    font-size: 24px;
-    font-weight: 800;
-}
-
-.card-description {
-    color: var(--light-dark);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;/
-}
-
 .choosing-us-card {
     border-radius: 16px;
 }
@@ -362,6 +369,7 @@ select {
     margin-bottom: 25px;
 }
 
+/* deals & discount styles */
 .discount {
     width: 80%;
     display: flex;
@@ -371,9 +379,6 @@ select {
     margin: 0 auto;
 }
 
-/* .discount .section-description {
-  margin: 25px auto 50px;
-} */
 .discount>p {
     width: 50%;
     text-align: center;
@@ -401,19 +406,8 @@ select {
     background-size: cover;
     background-position: center;
     border-radius: 16px;
+    display: flex;
     margin-bottom: 24px;
-}
-
-.tour-kashmir .discount-card {
-    width: 500px;
-    height: 390px;
-    border-radius: 16px;
-    border: 2px solid #FFF;
-    background: rgba(255, 255, 255, 0.80);
-    backdrop-filter: blur(2.5px);
-    position: relative;
-    left: 55px;
-    top: 15%;
 }
 
 .discount-card {
@@ -423,9 +417,7 @@ select {
     border: 2px solid #FFF;
     background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(2.5px);
-    position: relative;
-    right: 55px;
-    top: 15%;
+    margin: auto 60px;
 }
 
 .discount-card .card-title {
@@ -448,9 +440,6 @@ select {
     gap: 24px;
 }
 
-/* .date-location{
-    margin: 0;
-} */
 .duration-location {
     display: flex;
     gap: 8px;
@@ -463,12 +452,12 @@ select {
     width: 80%;
     margin: 100px auto;
     display: flex;
-    gap: 100px;
+    gap: 50px;
     justify-content: space-between;
 }
 
 .perfect-place .section-title {
-    width: 450px;
+    width: 400px;
 }
 
 .perfect-place .section-description {
@@ -553,7 +542,7 @@ select {
 }
 
 .newsletter-content p {
-    border-bottom: 1px solid rgba(19, 19, 24, 0.1);
+    border-bottom: 1px solid var(--bar-color);
     padding-bottom: 24px;
 }
 
@@ -564,7 +553,7 @@ select {
 
 .newsletter-content input {
     border-radius: 8px;
-    background: rgba(19, 19, 24, 0.05);
+    background: var(--transparent-white);
     font-size: 16px;
     font-weight: 400;
     color: var(--light-dark);
@@ -583,7 +572,7 @@ select {
 }
 
 .newsletter-img {
-    width: 65%;
+    width: 70%;
     height: 480px;
     background-image: url("../Images/Rectangle\ 8\ \(1\).png");
     background-repeat: no-repeat;
@@ -594,14 +583,14 @@ select {
 }
 
 .newsletter-discount {
-    width: 300px;
-    height: 70px;
+    width: 260px;
+    height: 65px;
     background: var(--tomato);
     padding: 30px 40px;
     border-radius: 16px;
     position: relative;
-    top: calc(100% - (130px));
-    left: calc(100% - (360px));
+    top: calc(100% - (125px));
+    left: calc(100% - (315px));
     transform: rotate(-19.628deg);
     transform-origin: bottom left;
 }
@@ -627,7 +616,7 @@ select {
 footer {
     margin-top: 100px;
     padding: 110px 200px;
-    background: rgba(19, 19, 24, 0.05);
+    background: var(--transparent-white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -648,7 +637,7 @@ footer .section-description {
 }
 
 .horizontal-bar {
-    border-bottom: 1px solid rgba(19, 19, 24, 0.1);
+    border-bottom: 1px solid var(--bar-color);
     padding-bottom: 50px;
 }
 
@@ -663,11 +652,14 @@ footer .section-description {
 
 /* Mobile Device */
 @media screen and (max-width: 600px) {
+
+    /* header styles */
     .header-container {
         width: 90%;
         margin: 20px auto;
     }
 
+    /* banner styles */
     .banner {
         width: 90%;
         height: auto;
@@ -702,7 +694,7 @@ footer .section-description {
         display: none;
     }
 
-    .bar {
+    .nav-bar {
         display: block;
     }
 
@@ -710,6 +702,7 @@ footer .section-description {
         width: 255px;
     }
 
+    /* popular tours styles */
     .popular-tours {
         width: 90%;
         flex-direction: column;
@@ -739,6 +732,7 @@ footer .section-description {
         margin: 12px 0;
     }
 
+    /* destination styles */
     .destination {
         width: 90%;
     }
@@ -769,6 +763,7 @@ footer .section-description {
             "bandarban";
     }
 
+    /* why choosing us styles */
     .choosing-us {
         width: 90%;
         margin: 25px auto;
@@ -800,6 +795,7 @@ footer .section-description {
     }
 
 
+    /* deals & discount styles */
     .discount {
         width: 90%;
     }
@@ -812,22 +808,11 @@ footer .section-description {
         font-size: 14px;
     }
 
-    .tour-kashmir .discount-card {
-        width: 350px;
-        height: 350px;
-        left: 10px;
-        top: 35%;
-    }
-
     .discount-card {
         width: 350px;
         height: 350px;
-        right: 10px;
-        top: 35%;
-    }
-
-    .discount-card .card-title {
-        margin-top: 0;
+        margin: 0 auto;
+        margin-top: 180px;
     }
 
     .discount-card .btn-tomato {
@@ -860,10 +845,6 @@ footer .section-description {
         padding: 25px 10px 10px;
     }
 
-    /* .hide {
-        display: none;
-    } */
-
     .perfect-place .section-title {
         width: 230px;
     }
@@ -872,6 +853,7 @@ footer .section-description {
         height: 300px;
     }
 
+    /* newsletter styles */
     .newsletter-container {
         width: 90%;
         gap: 16px;
@@ -902,10 +884,11 @@ footer .section-description {
     .newsletter-discount h2 {
         font-size: 16px;
     }
+
     /* footer styles */
     footer {
-    margin-top: 25px;
-    padding: 35px 45px;
-}
+        margin-top: 25px;
+        padding: 35px 45px;
+    }
 
 }
