@@ -348,17 +348,19 @@ select {
 }
 
 #card-3 {
-    width: 600px;
+    width: 700px;
     border: 1px solid rgba(233, 68, 68, 0.2);
     background: rgba(233, 68, 68, 0.05);
 }
 
 .choosing-us-card {
+    /* border: 1px solid red; */
     border-radius: 16px;
 }
 
 .choosing-us-card-content {
-    padding: 32px;
+    /* border: 1px solid red; */
+    padding: 20px 30px;
 }
 
 .choosing-us-card-container {
@@ -413,7 +415,7 @@ select {
 }
 
 .discount-card {
-    width: 500px;
+    width: 450px;
     height: 390px;
     border-radius: 16px;
     border: 2px solid #FFF;
@@ -432,19 +434,19 @@ select {
 }
 
 .discount-card-content {
-    padding: 30px;
+    padding: 40px;
 
 }
 
 .discount-details,
 .date-location {
     display: flex;
-    gap: 24px;
+    gap: 15px;
 }
 
 .duration-location {
     display: flex;
-    gap: 8px;
+    gap: 5px;
     align-items: center;
 }
 
@@ -848,18 +850,18 @@ footer .section-description {
     }
 
     .discount-card {
-        width: 350px;
-        height: 350px;
+        width: 320px;
+        height: 340px;
         margin: 0 auto;
         margin-top: 180px;
     }
 
     .discount-card .btn-tomato {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .discount-card-content {
-        padding: 20px;
+        padding: 15px;
 
     }
 
@@ -867,6 +869,12 @@ footer .section-description {
         flex-direction: column;
         gap: 0;
     }
+
+    .discount-card .card-title {
+        margin-top: 10px;
+    }
+
+
 
     /* perfect place section styles */
     .perfect-place {
